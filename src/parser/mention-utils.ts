@@ -14,6 +14,7 @@ const mentionRegexes: { [serviceName in MentionService]: RegExp } = {
     // dashes, or latin middle dots ('·').
     // https://support.google.com/youtube/answer/11585688?hl=en&co=GENIE.Platform%3DAndroid#tns
     youtube: /^@[-.·\w]{3,30}$/,
+    imkit: /^@[-_.·\w]{2,37}$/,
 };
 
 /**
@@ -44,11 +45,12 @@ export function isValidMention(mention: string, serviceName: MentionService): bo
     return re.test(mention);
 }
 
-export type MentionService = 'twitter' | 'instagram' | 'soundcloud' | 'tiktok' | 'youtube';
+export type MentionService = 'twitter' | 'instagram' | 'soundcloud' | 'tiktok' | 'youtube' | 'imkit';
 export const mentionServices: MentionService[] = [
     'twitter',
     'instagram',
     'soundcloud',
     'tiktok',
     'youtube',
+    'imkit',
 ];

@@ -94,7 +94,8 @@ export class MentionMatch extends AbstractMatch {
                 return 'https://www.tiktok.com/@' + this.mention;
             case 'youtube':
                 return 'https://youtube.com/@' + this.mention;
-
+            case 'imkit':
+                return 'https://imkit.io/' + this.mention;
             /* istanbul ignore next */
             default:
                 // Should never happen because Autolinker's constructor should block any invalid values, but just in case.

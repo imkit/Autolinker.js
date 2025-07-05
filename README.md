@@ -44,11 +44,11 @@ So, this utility attempts to handle everything. It:
 <!-- BENCHMARKS_TABLE_START -->
 | Library                                                          | Ops/sec | MOE    | Compared to Fastest |
 | ---------------------------------------------------------------- | ------- | ------ | ------------------- |
-| **autolinker**@4.1.5                                             | 3,302   | ±0.50% | Fastest ✅           |
-| [anchorme](https://github.com/alexcorvi/anchorme.js)@3.0.8       | 2,397   | ±0.29% | 27% (1.38x) slower  |
-| [linkifyjs](https://linkify.js.org/docs/linkify-html.html)@4.2.0 | 1,910   | ±0.37% | 42% (1.73x) slower  |
-| [linkify-it](https://github.com/markdown-it/linkify-it)@5.0.0    | 486     | ±0.98% | 85% (6.78x) slower  |
-<!-- Last update: 2025-05-01T16:31:00.394Z -->
+| **autolinker**@4.1.5                                             | 7,937   | ±0.27% | Fastest ✅           |
+| [linkifyjs](https://linkify.js.org/docs/linkify-html.html)@4.2.0 | 4,025   | ±1.28% | 49% (1.97x) slower  |
+| [anchorme](https://github.com/alexcorvi/anchorme.js)@3.0.8       | 3,368   | ±1.49% | 57% (2.36x) slower  |
+| [linkify-it](https://github.com/markdown-it/linkify-it)@5.0.0    | 907     | ±0.46% | 88% (8.74x) slower  |
+<!-- Last update: 2025-07-05T08:28:16.371Z -->
 <!-- BENCHMARKS_TABLE_END -->
 
 Hope that this utility helps you as well!
